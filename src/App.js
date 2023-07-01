@@ -1,5 +1,5 @@
 import React from 'react';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import HomePage from './Components/HomePage';
 import CartPage from './Components/CartPage';
 import "./App.css";
@@ -8,10 +8,12 @@ const App = () => {
 
     return(
         <div>
+            <BrowserRouter basename='/shopingcart_react'>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/cart" element={<CartPage />} />
             </Routes>
+            </BrowserRouter>
         </div>
     )
 }
