@@ -10,7 +10,7 @@ const App = () => {
         <div>
             <BrowserRouter basename='/shopingcart_react'>
             <Routes>
-                <Route path="/shopingcart_react" element={<HomePage />} />
+                <Route exact path="/shopingcart_react" element={<HomePage />} />
                 <Route path="/cart" element={<CartPage />} />
             </Routes>
             </BrowserRouter>
