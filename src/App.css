@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: black;
   color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.menu {
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.menu > a{
+  padding-right: 25px;
+  color: white;
+  text-decoration: none;
+}
+h1.head {
+  display: flex;
+  justify-content: center;
+  color: navy;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-div{
+  width: 300px;
+  border: 2px solid rgb(40, 242, 229);
+  padding: 5px;
+  margin-top: 10px;
+}
+.main-div > img {
+  width: 99%;
+  height: 250px;
+}
+.main-div > span{
+  font-weight: 500;
+}
+.addBtn {
+    width: 95%;
+    height: 28px;
+    margin: 15px 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background: green;
+    color: white;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  height: 80vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* cart page */
+.main-left {
+  display: flex;
+  flex-wrap: wrap;
+  scroll-behavior: auto;
+  width: 75%;
+  overflow: scroll;
+  height: auto;
+  margin: 5px 20px;
+}
+.main-left-div {
+  width: 28%;
+  height:auto;
+  padding: 0px 10px 5px;
+  margin: 10px 0px 3px 10px;
+  /* margin-top: 15px; */
+  /* margin-left: 10px; */
+  border: 2px solid rgb(40, 242, 229);
+}
+.main-left-div > img{
+  width: 96%;
+  height: 200px;
+  /* border: 2px solid rgb(40, 242, 229); */
+  padding: 8px 8px;
+}
+.main-left-div> span{
+  font-weight: 500;
+}
+
+.removeBtn{
+  width: 95%;
+  height: 28px;
+  margin: 10px 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgb(249, 105, 8);
+  color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.checkoutBtn{
+  width: 95%;
+  height: 28px;
+  margin: 0px 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgb(9, 136, 9);
+  color: white;
+  border: 2px solid rgb(6, 63, 6);
+  border-radius: 10px;
 }
